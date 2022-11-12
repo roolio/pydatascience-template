@@ -20,7 +20,11 @@ RUN apt-get update \
     && apt-get -y install ca-certificates curl bzip2 ${ADDITIONAL_PACKAGE}
 
 COPY env.yaml /tmp/env.yaml
+# specific modules
+COPY functions/requirements.yaml /tmp/requirements.yaml
+
 RUN micromamba install -y -n base -f /tmp/env.yaml && \
+    micromamba install -y -n base -f /tmp/requirements.yaml && \
     micromamba clean --all --yes
 
 RUN apt-get -qq -y remove curl \
