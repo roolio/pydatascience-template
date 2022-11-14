@@ -21,7 +21,7 @@ RUN apt-get update \
 
 COPY env.yaml /tmp/env.yaml
 # specific modules
-COPY functions/requirements.yaml /tmp/requirements.yaml
+COPY function/requirements.yaml /tmp/requirements.yaml
 
 RUN micromamba install -y -n base -f /tmp/env.yaml && \
     micromamba install -y -n base -f /tmp/requirements.yaml && \
