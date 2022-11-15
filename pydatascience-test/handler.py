@@ -17,8 +17,9 @@ def handle(req: bytes) -> str:
     Args:
         req (bytes): request body
     """
+    #inp = json.loads(req)
 
     return json.dumps({
         "echo": req,
-        "random": np.random.random_sample(),
+        "random": np.random.random_sample()
     })
