@@ -7,7 +7,7 @@ functions:
   pydatascience-test:
     lang: pydatascience
     handler: ./pydatascience-test
-    image: ghcr.io/${OWNER:-lucasroesler}/pydatascience-test:${TAG:-latest}
+    image: ghcr.io/${OWNER:-roolio}/pydatascience-test:${TAG:-latest}
   pydatascience-web-test:
     lang: pydatascience-web
     handler: ./pydatascience-web-test
