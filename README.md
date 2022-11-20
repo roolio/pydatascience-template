@@ -8,3 +8,10 @@ The Docker image is based on Python3 and uses Conda for installing packages.
 1.`ADDITIONAL_PACKAGE`: can be a list of additional packages that will be installed using apt-get
 2. `CHANNEL`: specifies an additional Conda channel that will be searched when installing python package
 
+
+## How to use
+
+```shell
+faas template pull https://github.com/roolio/pydatascience-template
+
+```
