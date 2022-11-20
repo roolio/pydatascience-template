@@ -16,4 +16,4 @@ def handle(req: bytes) -> str:
         req (bytes): request body
     """
 
-    return json.dumps({"echo": req)
+    return json.dumps({"echo": req})
