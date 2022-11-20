@@ -9,11 +9,10 @@ function_root = os.environ.get("function_root")
 # Now  pre-load the model, e.g.
 # from .core import model
 
-
 def handle(req: bytes) -> str:
     """handle a request to the function
     Args:
         req (bytes): request body
     """
-
+    input = json.loads(req) # in the case of json input
     return json.dumps({"echo": req})
