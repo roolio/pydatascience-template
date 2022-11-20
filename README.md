@@ -13,5 +13,7 @@ The Docker image is based on Python3 and uses Conda for installing packages.
 
 ```shell
 faas template pull https://github.com/roolio/pydatascience-template
-
+faas new my_function --lang=pydatascience
+# code the handler.py version
+faas up -f test.yml
 ```
