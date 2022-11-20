@@ -26,3 +26,8 @@ faas deploy -f test.yml
 ```
 
 (up is a shortcut for several actions : build + deploy)
+
+Test : exemple with json input : 
+```shell 
+curl http://$OPENFAAS_URL/function/test --data '{"msg" : "Hello"}'
+```
